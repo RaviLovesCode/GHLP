@@ -1,0 +1,358 @@
+
+            @import url('https://fonts.googleapis.com/css?family=Roboto');
+            @import url('https://fonts.googleapis.com/css?family=Oswald:600');
+body
+{    
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+    background: #262626;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif !important;
+}
+ul
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%) skewY(-8deg);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: #f00;
+    box-shadow: 0 0 0 10px #fff;
+    overflow: hidden;
+}
+p
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-30%) skewY(-8deg);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 4px;
+}
+li
+{
+    display: block;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animates 3s linear infinite;
+}
+@keyframes animates 
+{
+    0%
+    {
+        transform: translateY(-100px) rotateY(0deg);
+    }
+    20%
+    {
+        transform: translateY(0px) rotateY(360deg);
+    }
+    40%
+    {
+        transform: translateY(-10px) rotateY(360deg);
+    }
+    50%
+    {
+        transform: translateY(0px) rotateY(360deg);
+    }
+    50%
+    {
+        transform: translateY(0px) rotateY(360deg);
+    }
+    60%
+    {
+        transform: translateY(-10px) rotateY(360deg);
+    }
+    70%
+    {
+        transform: translateY(0px) rotateY(360deg);
+    }
+    80%
+    {
+        transform: translateY(0px) rotateY(360deg);
+    }
+    100%
+    {
+        transform: translateY(100px) rotateY(720deg);
+    }
+}
+li:nth-child(1)
+{
+    animation-delay: .1s;
+}
+li:nth-child(2)
+{
+    animation-delay: .2s;
+}
+li:nth-child(3)
+{
+    animation-delay: .3s;
+}
+li:nth-child(4)
+{
+    animation-delay: .4s;
+}
+li:nth-child(5)
+{
+    animation-delay: .5s;
+}
+li:nth-child(6)
+{
+    animation-delay: .6s;
+}
+li:nth-child(7)
+{
+    animation-delay: .7s;
+}
+li:nth-child(8)
+{
+    animation-delay: .8s;
+}
+li:nth-child(9)
+{
+    animation-delay: .9s;
+}
+/*.......................STARS................*/
+div .section
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+.stars
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url("pattern.png");
+    background: cover;
+}
+.stars:nth-child(1)
+{
+    animation: anime 20s linear infinite;
+}
+.stars:nth-child(2)
+{
+    animation: anime 22s linear infinite;
+}
+.stars:nth-child(3)
+{
+    animation: anime 24s linear infinite;
+}
+.stars:nth-child(4)
+{
+    animation: anime 26s linear infinite;
+}
+.stars:nth-child(5)
+{
+    animation: anime 28s linear infinite;
+}
+.stars:nth-child(6)
+{
+    animation: anime 30s linear infinite;
+}
+.stars:nth-child(7)
+{
+    animation: anime 32s linear infinite;
+}
+.stars:nth-child(8)
+{
+    animation: anime 34s linear infinite;
+}
+.stars:nth-child(9)
+{
+    animation: anime 40s linear infinite;
+}
+@keyframes anime 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+/*...............CARDS.....................*/
+section .card
+{
+    position: relative;
+    width: auto;
+    height:400px;
+    padding: 50px 20px;
+    background: #ff0;
+    border-radius: 10px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    animation: move 2s linear infinite;
+    overflow: hidden;
+}
+section .card:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    transform: skewX(-5deg);
+    background: rgba(255,255,255,.2);
+}
+/* section .col-sm-4:nth-child(1) .card
+{
+    background: #3fc012 url(sparkles.png);
+    background-position:center;
+    background-size:600px 400px;
+} */
+ section .col-sm-4:nth-child(1) .card
+{
+    background:#58dd28 url(sparkles.png);
+} 
+ /* section .col-sm-4:nth-child(3) .card
+{
+    background: #0f84d4 url(sparkles.png);
+}  */
+@keyframes move
+{
+    0%
+    {
+        background-position: 0 0px;
+    }
+    100%
+    {
+        background-position: 0 -720px;
+    }
+}
+
+
+
+
+section .card .image
+{   
+
+    
+    position: absolute;
+    align-self: center;
+   
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto;
+    /* overflow: hidden; */
+    /* border: 4px solid #fff; */
+    z-index: 1;
+    animation:animy 5s infinite;
+}
+section .card  .text
+{
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 40px; 
+}
+section .card  .text:before
+{
+    content: '\f10d';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-family: fontAwesome;
+    font-size: 60px;
+    color: rgba(255,255,255,.5);
+    left: 50%;
+    transform: translateX(-50%);
+}
+section .card .details h2
+{
+    position: relative;
+
+    color: #fff;
+    margin: 0px;
+    padding: 0;
+    font-size: 24px;
+    z-index: 1;
+}
+section .card .details h2 span
+{
+    font-size: 18px;
+}
+@keyframes animy
+{
+    0%
+    {
+        transform: translateY(-200px) rotateY(0deg);
+    }
+    20%
+    {
+        transform: translateY(50px) rotateY(0deg);
+    }
+    40%
+    {
+        transform: translateY(-10px) rotateY(0deg);
+    }
+    50%
+    {
+        transform: translateY(100px) rotateY(0deg);
+    }
+    50%
+    {
+        transform: translateY(0px) rotateY(0deg);
+    }
+    60%
+    {
+        transform: translateY(-100px) rotateY(0deg);
+    }
+    70%
+    {
+        transform: translateY(50px) rotateY(0deg);
+    }
+    80%
+    {
+        transform: translateY(10px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: translateY(10px) rotateX(360deg);
+      
+    }
+}
+  .glow {
+   /* font-size: 18px;  */
+   font-weight: 100px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}  
+    @keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+} 
+  
